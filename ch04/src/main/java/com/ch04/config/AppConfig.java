@@ -19,7 +19,7 @@ public class AppConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        // 정적 리소스 자원
-        
+        // 정적 리소스 자원 경로 설정
+        registry.addResourceHandler("/**").addResourceLocations("/resources/");
     }
 }
